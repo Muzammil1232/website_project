@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 300px;
+    height: 55vh;
+    background-color: white;
+    margin: 20px 0 40px 25px;
+    display:inline-table;
+    box-shadow: 0 0 7px 1px grey;
+}
+/* .Left arrow{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+} */
+h2{
+    margin: 25px 0 25px 30px;
+    color: #520c61;
+}
+p{
+    font-weight: bold;
+    margin: 20px 0 10px 20px;
+}
+#order{
+    background-color: #520c61;
+    color: white;
+    width: 100px;
+    height: 30px;
+    /* padding-left: 7px; */
+    padding: 4px 0 5px 10px;
+    /* padding: 1% 1% 1% 1%; */
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+/* #order-1{
+    background-color: #520c61;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding-left: 7px;
+    padding: 4px 0 5px 5px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+} */
+iframe{
+    margin: 0 0 0 5px;
+}
