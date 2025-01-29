@@ -58,8 +58,10 @@ header {
 .banner{
     width: 50%;
     height: 70vh;
-    background-color: blue;
+    background-color: transparent;
     margin: auto;
+    margin-top: 3rem;
+    /* padding-top: 12rem; */
 }
 .first-page{
     width: 100%;
@@ -72,6 +74,8 @@ input{
     border-color: #520c61;
     outline: none;
     /* margin: auto; */
+    font-weight: bold;
+    /* padding:; */
 
 }
 input:hover{
@@ -87,7 +91,8 @@ input:hover{
     margin: 4.5%;
 }
 .banner img{
-    width: 70%;
+    width: 50%;
+    margin: 2% 2% 0 23%;
     /* margin: 4.5%; */
     /* margin: auto; */
 }
@@ -98,7 +103,7 @@ input:hover{
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 0 60rem;
+    margin: 0 0 0 2rem;
 }
 
 nav ul li {

@@ -12,13 +12,6 @@
     display:inline-table;
     box-shadow: 0 0 7px 1px grey;
 }
-/* .Left arrow{
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-} */
 h2{
     margin: 25px 0 25px 30px;
     color: #520c61;
@@ -28,34 +21,36 @@ p{
     margin: 20px 0 10px 20px;
 
 }
-
 #order{
     background-color: #520c61;
     color: white;
     width: 100px;
     height: 30px;
-    /* padding-left: 7px; */
     padding: 4px 0 5px 10px;
-    /* padding: 1% 1% 1% 1%; */
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-/* #order-1{
-    background-color: #520c61;
-    color: white;
-    width: 30px;
-    height: 30px;
-    padding-left: 7px;
-    padding: 4px 0 5px 5px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-} */
 iframe{
     margin: 0 0 0 5px;
+    /* width: 50%;
+    height: 40vh; */
+}
+.button-section{
+    margin-left: 2%;
+}
+#previous{
+    padding: 0.5rem;
+    background-color: #520c61;
+}
+#next{
+    padding: 0.5rem;
+    background-color: #520c61;
+}
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
