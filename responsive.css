@@ -1,0 +1,35 @@
+
+@media (max-width:320px) {
+    
+
+   #searchInput{
+    width: 43%;
+    height: 40px;
+   }
+   .banner{
+    width: 90%;
+   }
+   #btn-search{
+    width: 50px;
+    height: 40px;
+   }
+   .first-page{
+    height: 60vh;
+   }
+}
+@media (max-width:425px) and (min-width:321px){
+    #searchInput{
+        width: 43%;
+        height: 40px;
+       }
+       .banner{
+        width: 90%;
+       }
+       #btn-search{
+        width: 50px;
+        height: 40px;
+       }
+       .first-page{
+        height: 60vh;
+       }
+}

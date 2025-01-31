@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Skill Builder</title>
     <style>
         *{
             margin: 0;
@@ -17,7 +17,7 @@
             padding: 1.5rem 0;
         }
         h2{
-            margin: 20px 0 0 50px;
+            margin: 20px 0 0 44px;
             color: white;
         }
         .container{
@@ -78,12 +78,71 @@
             font-weight: bold;
             font-size: 1rem;
         }
+        nav a{
+            color: #520c61;
+            text-decoration: none;
+            padding: 5px;
+            background-color: white;
+            border-radius: 5px;
+            margin: 5px 0  0 20px;
+        }
+        nav p{
+            float: right;
+            margin: 0 25px 0 0;
+        }
+        @media (max-width:425px){
+            p{
+                font-size: 10px;
+            }
+            .description{
+                width: 65%;
+                height: 6vh;
+                padding: 3.5% 0 0 3%;
 
+            }
+            button{
+                width: 70px;
+                height: 6vh;
+            }
+            button a{
+                font-size: 10px;
+            }
+            h2{
+                font-size: small;
+                margin: 20px 0 0 5px;
+            }
+            header{
+                padding: 0.5rem 0 1rem 1rem;
+            }
+
+        }
+        @media (max-width:800px) and (min-width:426px){
+            p{
+                font-size: 13px;
+            }
+            .description{
+                width: 65%;
+                height: 8vh;
+                padding: 3.5% 0 0 3%;
+
+            }
+            button{
+                width: 70px;
+                height: 8vh;
+            }
+            button a{
+                font-size: 10px;
+            }
+            h2{
+                font-size: large;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
+            <p><a href="/index.html">Home</a></p>
             <h2>Full Stack Web Development</h2>
         </nav>
       </header>

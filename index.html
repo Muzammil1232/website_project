@@ -5,57 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skill Builder</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="javascript.js">
+    <link rel="stylesheet" href="/responsive.css">
+    <link rel="stylesheet" href="/javascript.js">
 </head>
 <body>
-    <!-- first -->
-    <!-- <nav>
-        <div class="elements">
-            <ul>
-                <img src="images/Logo/logo.png" alt="">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Categories">Categories</a></li>
-            </ul>
-        </div>
-    </nav> -->
-    <!-- second -->
      <header>
         <nav>
-            <!-- <img src="/images/Logo/logo.png" alt="" width="100" height="40"> -->
           <ul>
             <li><a href="#PROGRAMMING">Programming</a></li>
             <li><a href="#Graphics">Graphics</a></li>
             <li><a href="#About As">About Us </a></li>
-            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>  </a> -->
-            <!-- <img src="/images/Logo/logo.png" alt="" > -->
           </ul>
         </nav>
-      </header>
-      <!-- third -->
-       <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-        <!-- <div class="navbar" id="myTopnav">
-            <img src="/images/Logo/logo.png" alt="">
-            <a href="#home" class="active">Home</a>
-              <a href="#news">News</a>
-               <a href="#contact">Contact</a>
-                 <a href="#about">About</a>
-                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                     <i class="fa fa-bars"></i>  </a>
-        </div> -->
-<div class="first-page">        
+    </header>
+<div class="first-page">
     <div class="banner">
         <img src="/images/Logo/SkillBuilder.png" alt="">
-        <div class="search-bar">
-        <input type="text" placeholder="Search Courses" onkeyup="search_courses" name="search">
+
+        <div class="search-container">
+            <div class="flex">
+            <input type="text" id="searchInput" placeholder="Search courses..." onclick="showSuggestions()" onkeyup="filterSuggestions(event)">
+            <button id="btn-search" onclick="performSearch()">Search</button>
+            </div>
+            <ul id="suggestionsList" class="suggestions-list">
+              <li><a href="/Angular js/Angular-English.html" class="suggestion-item">Angular in English</a></li>
+              <li><a href="/Angular js/Angular-Hindi.html" class="suggestion-item">Angular in Hindi</a></li>
+              <li><a href="/Angular js/Angualr-Tamil.html" class="suggestion-item">Angular in Tamil</a></li>
+              <li><a href="/Canva/canva-English.html" class="suggestion-item">Canva in English</a></li>
+              <li><a href="/Canva/canva-Hindi.html" class="suggestion-item">Canva in Hindi</a></li>
+              <li><a href="/Canva/canva-Tamil.html" class="suggestion-item">Canva in Tamil</a></li>
+              <li><a href="/Corel Draw/corel-draw-hindi.html" class="suggestion-item">Corel Draw in hindi</a></li>
+              <li><a href="/Css/css-English.html" class="suggestion-item">CSS in English</a></li>
+              <li><a href="/Css/css-Hindi.html" class="suggestion-item">CSS in Hindi</a></li>
+              <li><a href="/Css/css-Tamil.html" class="suggestion-item">CSS in Tamil</a></li>
+              <li><a href="/Figma/figma-English.html" class="suggestion-item">Figma in English</a></li>
+              <li><a href="/Figma/figma-Hindi.html" class="suggestion-item">Figma in Hindi</a></li>
+              <li><a href="/Figma/figma-Tamil.html" class="suggestion-item">Figma in Tamil</a></li>
+              <li><a href="/HTML/Html-English.html" class="suggestion-item">HTML in English</a></li>
+              <li><a href="/HTML/Html-Hindi.html" class="suggestion-item">HTML in Hindi</a></li>
+              <li><a href="/HTML/Html-Tamil.html" class="suggestion-item">HTML in Tamil</a></li>
+              <li><a href="/javascript/js-English.html" class="suggestion-item">Javascript in English</a></li>
+              <li><a href="/javascript/js-hindi.html" class="suggestion-item">Javascript in Hindi</a></li>
+              <li><a href="/javascript/js-Tamil.html" class="suggestion-item">Javascript in Tamil</a></li>
+              <li><a href="/Node js/node-English.html" class="suggestion-item">Nodejs in English</a></li>
+              <li><a href="/Node js/node-Hindi.html" class="suggestion-item">Nodejs in Hindi</a></li>
+              <li><a href="/Node js/node-Tamil.html" class="suggestion-item">Nodejs in Tamil</a></li>
+              <li><a href="/photoshop/photoshop-Tamil.html" class="suggestion-item">Photoshop in Tamil</a></li>
+              <li><a href="/Python/Python-English.html" class="suggestion-item">Python in English</a></li>
+              <li><a href="/Python/Python-Hindi.html" class="suggestion-item">Python in Hindi</a></li>
+              <li><a href="/Python/Python-Tamil.html" class="suggestion-item">Python in Tamil</a></li>
+              <li><a href="/React/react-English.html" class="suggestion-item">React in English</a></li>
+              <li><a href="/React/react-Hindi.html" class="suggestion-item">React in Hindi</a></li>
+              <li><a href="/React/react-Tamil.html" class="suggestion-item">React in Tamil</a></li>
+              <li><a href="/UI-Ux/UI-UX-Tamil.html" class="suggestion-item">UI/UX in Tamil</a></li>
+              <li><a href="/web devop/web dev.html" class="suggestion-item">Fullstack Web development</a></li>
+            </ul>
+          </div>
+        <!-- <div class="container-2">
+        <input type="text" id="searchbar" placeholder="Search Courses" onkeyup="search_courses" name="search" >
     <ul>
-        <li id="list" class="course"><a href="/web devop/web.html">Web Development</a></li>
-        <li id="list" class="course"><a href=""></a></li>
-        <li id="list" class="course"><a href=""></a></li>
-        <li id="list" class="course"><a href=""></a></li>
-        <li id="list" class="course"><a href=""></a></li>
+        <li id="list" class="course"><a href=""></a>Angular</li>
+        <li id="list" class="course"><a href=""></a> Canva</li>
+        <li id="list" class="course"><a href=""></a>Css</li>
+        <li id="list" class="course"><a href=""></a>Figma </li>
+        <li id="list" class="course"><a href=""></a>Node</li>
         <li id="list" class="course"><a href=""></a></li>
         <li id="list" class="course"><a href=""></a></li>
         <li id="list" class="course"><a href=""></a></li>
@@ -83,8 +96,8 @@
         <li id="list" class="course"><a href=""></a></li>
         <li id="list" class="course"><a href=""></a></li>
     </ul>
-        </div>
-    </div>
+        </div> -->
+</div>
 </div>
     <h2>PROGRAMMING </h2>
     <div class="container">
@@ -280,5 +293,6 @@
     <footer>
         <p>&copy; 2025 Skill Builder</p>
     </footer>
+    <script src="/javascript.js"></script>
 </body>
 </html>
