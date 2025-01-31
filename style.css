@@ -65,9 +65,8 @@ header {
     height: 90vh;
     align-items: center;
 }
-
 .search-container {
-    width: 500px;
+    width: 100%;
     margin: 50px auto;
     /* display: flex; */
     position: relative;
@@ -270,6 +269,7 @@ h2{
 .container{
     width: 300px;
     height: 55vh;
+    border-radius: 3px;
     background-color: white;
     margin: 25px 0 40px 25px;
     display: inline-block;
@@ -279,6 +279,10 @@ h2{
     -moz-transition: 200ms;
     -ms-transition: 200ms;
     -o-transition: 200ms;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 .container:hover{
     transform:translate(5px, 5px);

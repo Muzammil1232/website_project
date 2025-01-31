@@ -1,35 +1,67 @@
 
 @media (max-width:320px) {
-    
 
    #searchInput{
-    width: 43%;
+    width: 74%;
     height: 40px;
    }
    .banner{
-    width: 90%;
+    width: 78%;
    }
    #btn-search{
-    width: 50px;
+    width: 65px;
     height: 40px;
    }
    .first-page{
     height: 60vh;
    }
+   .container{
+    width: 270px;
+    height: 53vh;
+   }
+   .container img{
+    width: 230px;
+   }
+   header{
+    padding: 1rem;
+   }
+   nav ul{
+    margin: 0;
+   }
+   nav ul li a{
+    font-size: 10px;
+   }
+   h2{
+    font-size: large;
+    margin: 25px 0 0 40px;
+   }
+   /* button{
+    width: 90px;
+    height: 35px;
+   } */
 }
 @media (max-width:425px) and (min-width:321px){
     #searchInput{
-        width: 43%;
+        width: 76%;
         height: 40px;
        }
        .banner{
-        width: 90%;
+        width: 80%;
        }
        #btn-search{
-        width: 50px;
+        width: 60px;
         height: 40px;
        }
        .first-page{
         height: 60vh;
+       }
+       nav ul{
+        margin: 0 0 0 1rem;
+       }
+       nav ul li a{
+        font-size: 10px;
+       }
+       header{
+        padding: 1rem;
        }
 }
