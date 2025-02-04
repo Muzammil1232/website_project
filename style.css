@@ -52,13 +52,23 @@ header {
     color: #fff;
     padding: 2rem 0;
 }
+.first-page{
+    background-image: url('images/Banners/banner-3.png');
+    background-position: center;
+}
 .banner{
     width: 50%;
-    height: 70vh;
-    background-color: transparent;
+    height: 80vh;
+    /* background-color: white; */
+    /* opacity: 0.5; */
     margin: auto;
-    margin-top: 3rem;
-    /* padding-top: 12rem; */
+    /* margin-top: 3rem; */
+    padding-top: 3rem;
+    /* border-top-left-radius: 900px;
+    border-top-right-radius: 900px; */
+    /* box-shadow:0 0 10px 5px black; */
+    /* border: 2px solid #520c61; */
+    /* padding-bottom: 7rem; */
 }
 .first-page{
     width: 100%;
@@ -92,6 +102,7 @@ header {
     padding: 0;
     position:relative;
     width: 82%;
+    overflow: hidden;
     /* overflow: hidden;
     overflow-y: scroll; */
     /* overflow-y: hidden; */
@@ -279,10 +290,10 @@ h2{
     -moz-transition: 200ms;
     -ms-transition: 200ms;
     -o-transition: 200ms;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 .container:hover{
     transform:translate(5px, 5px);
@@ -305,6 +316,7 @@ p{
     font-weight:normal;
     /* display: inline-block; */
 }
+
 button{
     background-color: #520c61;
     color: white;
