@@ -11,6 +11,7 @@
    #btn-search{
     width: 65px;
     height: 40px;
+
    }
    .first-page{
     height: 60vh;
@@ -51,6 +52,7 @@
        #btn-search{
         width: 60px;
         height: 40px;
+        margin-top: 5px;
        }
        .first-page{
         height: 60vh;

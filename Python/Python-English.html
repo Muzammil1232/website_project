@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
     <link rel="stylesheet" href="/javascript/js.css">
+    <link rel="stylesheet" href="/Python/python.js">
 </head>
 <body>
     <h2>Python full course - English</h2>
@@ -15,3 +16,71 @@
     </div>
 </body>
 </html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Progress Tracker</title>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <style>
+        #progressBarContainer {
+            width: 100%;
+            height: 20px;
+            background-color: #e0e0e0;
+        }
+        #progressBar {
+            height: 100%;
+            background-color: #76c7c0;
+            width: 0%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="player1">
+    <p id="order">Lesson 1</p>
+    <iframe width="290" height="200" src="https://www.youtube.com/embed/WGJJIrtnfpk?si=UFpIreKrEkStxrpb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Python Tutorials in English</p>
+</div>
+
+<div id="progressBarContainer">
+    <div id="progressBar"></div>
+</div>
+
+<script>
+    let Player1;
+
+    function onYouTubeIframeAPIReady() {
+        player1 = new YT.Player1('player1', {
+            height: '390',
+            width: '640',
+            videoId: 'player1',  // Replace with your video ID
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING) {
+            trackProgress();
+        }
+    }
+
+    function trackProgress() {
+        const duration = player1.getDuration();
+        const currentTime = player1.getCurrentTime();
+        const percentage = (currentTime / duration) * 100;
+        console.log(`Video Progress: ${percentage.toFixed(2)}%`);
+        updateProgressBar(percentage);
+    }
+
+    function updateProgressBar(percentage) {
+        const progressBar = document.getElementById('progressBar');
+        progressBar.style.width = percentage + '%';
+    }
+</script>
+
+</body>
+</html> -->
