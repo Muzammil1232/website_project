@@ -55,6 +55,9 @@
     float: right;
     margin-right: 20px;
 }
+#loginBtn:hover{
+    box-shadow: 0 0 15px 2px white;
+}
 /* The Close Button */
 .close-btn {
     color: #aaa;
@@ -432,9 +435,23 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li a:hover{
-    text-shadow: 2px 2px 8px white;
+    /*text-shadow: 2px 2px 8px white;
+    */background-color: white;
+    color: #520c61;
+    box-shadow: 0 0 15px 2px white;
+    padding: 0.5rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
-
+.menu-icon{
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
 li{
     list-style: none;
 }
@@ -505,6 +522,7 @@ button:hover{
 .contact-section{
     width: 100%;
     height: 80vh;
+    color: white;
     /* background-color: blue; */
     margin: 1% 0 2% 0;
     display: flex;
@@ -512,19 +530,40 @@ button:hover{
     flex-wrap: wrap;
     padding: 7px 0 0 150px;
 }
+#contact-heading{
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 6px white;
+}
 .left{
-    width: 500px;
+    width: 40%;
+    min-width: 350px;
     height: 500px;
     background-color: #520c61;
     /* box-shadow: 0 0 15px 2px #520c61; */
     /* margin: auto; */
 }
+.left-items{
+    background-color: transparent;
+    width: 70%;
+    height: 290px;
+    margin: 100px auto;
+    /* align-items: center; */
+}
 .right{
-    width: 500px;
+    width: 40%;
+    min-width: 350px;
     height: 500px;
     padding-top: 20px;
     box-shadow: 0 0 3px 1px #520c61;
-
+}
+.contact-flex{
+    display: flex;
+    margin: 30px 0 10px 0;
+    /* text-align: center; */
+}
+.contact-flex p{
+    margin: 5px 0 5px 15px;
+}
 .form{
     width: 80%;
     height: 65vh;
@@ -538,12 +577,6 @@ button:hover{
 }
 #queries{
     margin: 0 0 19px 105px;
-}
-.left-items{
-    width: 40%;
-    height: 40vh;
-    background-color: red;
-    border: 2px solid white;
 }
 #name-input{
     border: 2px solid #520c61;
@@ -569,6 +602,23 @@ button:hover{
     outline: none;
     border-radius: 5px;
 }
+hr{
+    border-top: 2px solid #520c61;
+    margin: 3%;
+}
+.top-link{
+    margin-top: 30px;
+}
+.top-link a:hover{
+    background-color: white;
+    color: #520c61;
+    padding: 0.8rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 0 15px 2px white;
 }
 footer {
     background: #520c61;

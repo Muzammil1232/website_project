@@ -11,14 +11,20 @@
 <body>
      <header>
         <nav>
-          <ul>
+            
+          <ul class="nav-links">
             <li><a href="#programming">Programming</a></li>
             <li><a href="#graphics">Graphics</a></li>
             <li><a href="/about.html">About Us </a></li>
             <li><a href="#contact-us">Contact Us</a></li>
           </ul>
+
           <!-- Button to open the login modal -->
     <button id="loginBtn">Login</button>
+
+    <div class="menu-icon" id="menu-icon">
+        &#9776;
+    </div>
 
     <!-- The Modal -->
     <div id="loginModal" class="modal">
@@ -123,7 +129,7 @@
 
 
 
-
+<hr>
 <section id="programming">
     <h2>PROGRAMMING </h2>
     <div class="container">
@@ -259,7 +265,7 @@
         <button><a href="/Css/css-Tamil.html">Go to course</a></button>
     </div>
 </section>
-
+ <hr>
     <h2 id="graphics">GRAPHICS </h2>
     <div class="container">
         <img src="/images/Thumbnails/Figma -English.avif" alt="">
@@ -315,11 +321,31 @@
         <p id="channel">By CodeWithHarry</p>
         <button><a href="/photoshop/photoshop-Tamil.html">Go to course</a></button>
     </div>
+    <hr>
     <section id="contact-us">
         <div class="contact-section">
             <div class="left">
                 <div class="left-items">
-                    
+                    <h3 id="contact-heading">Contact Us</h3>
+                    <div class="call  contact-flex">
+                        <img src="/images/icons/phone-solid.svg" alt="" width="30" height="30">
+                        <p>7603837338</p>
+                    </div>
+                    <div class="email contact-flex">
+                        <img src="/images/icons/email.svg" alt="" width="30" height="30">
+                        <p>muzammil84403@gmail.com</p>
+                    </div>
+                    <div class="whatsapp  contact-flex">
+                        <img src="/images/icons/whatsapp-brands-solid.svg" alt="" width="30" height="30">
+                        <p>7603837338</p>
+                    </div>
+                    <div class="insta  contact-flex">
+                        <img src="/images/icons/instagram.png" alt="" width="30" height="30">
+                        <p>mystery_muzammil</p>
+                    </div>
+
+
+                    <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
                 </div>
             </div>
             <div class="right">
@@ -345,6 +371,10 @@
         </div>
     </section>
     <footer>
+        <div class="top-link">
+            <a href="/index.html">Back to Top &#11014</a>
+        </div>
+        <hr id="bottom-line">
         <p>&copy; 2025 Skill Builder</p>
     </footer>
     <script src="/javascript.js"></script>
