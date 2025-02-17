@@ -12,13 +12,6 @@
     display:inline-table;
     box-shadow: 0 0 7px 1px grey;
 }
-/* .Left arrow{
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-} */
 h2{
     margin: 25px 0 25px 30px;
     color: #520c61;

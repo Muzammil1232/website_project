@@ -1,12 +1,21 @@
 
-//nav-bar to be displayed in mobile 
-const menuIcon=document.getElementById('menu-icon');
-const navLinks=document.getElementById('nav-links');
+// //nav-bar to be displayed in mobile 
+// const menuIcon=document.getElementById('menu-icon');
+// const navLinks=document.getElementById('nav-links');
 
-menuIcon.addEventListener('click', ()=>
-{
-  navLinks.classList.toggle('active');
+// menuIcon.addEventListener('click', ()=>
+// {
+//   navLinks.classlist.toggle('active');
+// });
+
+// JavaScript to toggle the navigation menu
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
+
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
+
 //search bar 
 function showSuggestions() {
   document.getElementById('suggestionsList').style.display = 'block';

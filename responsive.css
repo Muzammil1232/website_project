@@ -36,10 +36,43 @@
     font-size: large;
     margin: 25px 0 0 40px;
    }
-   /* button{
-    width: 90px;
-    height: 35px;
-   } */
+   #loginBtn{
+    margin-left: 0;
+   }
+   .contact-section{
+    flex-direction: row;
+    padding: 0;
+    height: auto;
+
+    }
+    .left{
+        min-width: 305px;
+        height: 440px;
+        margin: auto;
+    }
+    .left-items{
+        width: 83%;
+        margin: 50px auto;
+    }
+    .right{
+        min-width: 305px;
+        height: 440px;
+        margin: auto;
+
+    }
+    #queries {
+        margin: 0;
+        text-align: center;
+    }
+    .banner {
+        width: 78%;
+        padding-top: 150px;
+    }
+    h4{
+        text-align: center;
+        font-size: 1rem;
+        margin: 20px 0;
+    }
 }
 @media (max-width:425px) and (min-width:321px){
     #searchInput{
@@ -66,8 +99,44 @@
        header{
         padding: 1rem;
        }
+       #loginBtn{
+        margin-left: 0;
+       }
+       .contact-section{
+        flex-direction: row;
+        padding: 3%;
+        height: auto;
+       }
+       .left{
+        min-width: 305px;
+        height: 440px;
+        margin: auto;
+    }
+    .left-items{
+        width: 83%;
+        margin: 50px auto;
+    }
+    .right{
+        min-width: 305px;
+        height: 440px;
+        margin: auto;
+
+    }
+    #queries {
+        margin: 0;
+        text-align: center;
+    }
+    .banner {
+        width: 78%;
+        padding-top: 150px;
+    }
+    h4{
+        text-align: center;
+        font-size: 1rem;
+        margin: 20px 0;
+    }
 }
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
     .menu-icon{
         display: block;
     }
@@ -80,5 +149,73 @@
         background-color: #333;
         flex-direction: column;
         align-items: center;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+} */
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        /* background-color: #E7C6FF; */
+        background-color: #520c61;
+        /* background-color: #D1E5F4; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-left: 10px;
+    }
+    #loginBtn{
+        margin-left: 0;
+    }
+    .contact-section{
+        flex-direction: row;
+        padding: 3%;
+        height: auto;
+       }
+       .left{
+        min-width: 305px;
+        height: 440px;
+        margin: auto;
+    }
+    .left-items{
+        width: 83%;
+        margin: 50px auto;
+    }
+    .right{
+        min-width: 305px;
+        height: 440px;
+        margin: auto;
+
+    }
+    #queries {
+        margin: 0;
+        text-align: center;
+    }
+    .banner {
+        width: 78%;
+        padding-top: 150px;
+    }
+    h4{
+        text-align: center;
+        font-size: 1rem;
+        margin: 20px 0;
     }
 }
