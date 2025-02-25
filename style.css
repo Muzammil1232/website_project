@@ -384,10 +384,6 @@ h2{
     display: inline-block;
     box-shadow: 0 0 7px 1px grey;
     transition: 200ms;
-    -webkit-transition: 200ms;
-    -moz-transition: 200ms;
-    -ms-transition: 200ms;
-    -o-transition: 200ms;
 }
 .container:hover{
     transform:translate(5px, 5px);
@@ -416,6 +412,7 @@ button{
     color: white;
     width: 100px;
     height: 40px;
+    /* padding: 15px; */
     font-weight: bold;
     border: none;
     margin: 2px 0 10px 20px;
@@ -425,10 +422,37 @@ button{
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
+button a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
 button:hover{
     box-shadow:0 0 10px 5px #520c61;
     cursor: pointer;
 }
+.btn{
+    background-color: #520c61;
+    color: white;
+    /* width: 100px;
+    height: 60px; */
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+    margin: 10px 0 10px 20px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.btn:hover{
+    box-shadow:0 0 10px 5px #520c61;
+    cursor: pointer;
+}
+/* .btn a{
+    margin: 10px 0 10px 20px;
+} */
 .contact-section{
     width: 100%;
     height: 80vh;
