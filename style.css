@@ -275,6 +275,13 @@ header {
     margin: 0 0 0 10px;
     height: inherit;
 }
+.button-section{
+    /* background-color: #555; */
+    width: 200px;
+    height: 50px;
+    padding-top: 13px;
+
+}
   .suggestions-list {
     list-style: none;
     margin: 0;
@@ -384,6 +391,10 @@ h2{
     display: inline-block;
     box-shadow: 0 0 7px 1px grey;
     transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
 }
 .container:hover{
     transform:translate(5px, 5px);
