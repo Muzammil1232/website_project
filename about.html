@@ -29,19 +29,112 @@
             float: right;
             margin: 0 25px 0 0;
         }
-        .container{
+       /* .container{
             width: 80%;
             height: 65vh;
             transform: skew(-10deg);
             margin: 50px auto;
             background-color: #FCE5FC;
             box-shadow: 20px 20px #520c61;
+        } */
+
+        .container{
+            width: 80%;
+            height: 81vh;
+            background-color: white;
+            
+            margin: 50px auto;
+            border-radius: 20px;
+            line-height: 1.6rem;
+            box-shadow: 0 0 15px 2px #888;
         }
         #content{
             width: 80%;
             height: 55vh;
             margin: auto;
-            padding-top: 45px;
+            padding-top: 37px;
+        }
+        .Team{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 35px;
+            
+        }
+        .our_team{
+            background-color: white;
+            width: 20%;
+            height: 50vh;
+            min-width: 280px;
+            border: 1px solid white;
+            border-radius: 20px;
+            box-shadow: 0 0 15px 2px #888;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+        .our_team:hover{
+            transform:translate(5px, 5px);
+            z-index: 2;
+            -webkit-transform:translate(5px, 5px);
+            -moz-transform:translate(5px, 5px);
+            -ms-transform:translate(5px, 5px);
+            -o-transform:translate(5px, 5px);
+        }
+        .photo{
+            width: 60%;
+            height: 25vh;
+            background-color: #ccc;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 100px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            -ms-border-radius: 100px;
+            -o-border-radius: 100px;
+            overflow: hidden;
+            
+        }
+       
+        .details{
+            width: 85%;
+            height: auto;
+            margin: auto;
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #name{
+            color: #520c61;
+        }
+        .name{
+            color: #520c61;
+        }
+        .footer{
+            width: 100%;
+            height: 10vh;
+            background-color: #520c61;
+        }
+        .footer p{
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 20px;
+        }
+        @media (min-width:320px) and (max-width:425px){
+            .Team{
+                overflow: scroll;
+            }
+            .our_team{
+                margin: 10px 20px;
+            }
         }
     </style>
 </head>
@@ -52,19 +145,51 @@
         </nav>
     </header>
     <div class="container">
-        <div id="content">
-            <h2>Skill Builder</h2> <br>
-            <p><b>Build on :</b> <br> Mazharul Uloom college, Ambur-635802 <br>
+        <div id="content" class="name">
+            <h2 id="name">Skill Builder</h2> <br>
+            <p id="name"><b>Build on :</b> <br> Mazharul Uloom college, Ambur-635802 <br>
             <b>Students of batch :</b> <br>
              2022-2025 <br>
              <b>Under The Guidance of :</b> <br>
-            <li>Joseph Gabriel - HOD of computer science</li>
-            <li>A.Zakiuddin Ahmed - Assistant professor </li>
-            <li>Dr.P.Rizwan Ahmed - Assistant prof & HOD of BCA</li>
+            <li>Joseph Gabriel <br>&nbsp;( HOD of computer science ) </li>
+            <li>Dr.A.Zakiuddin Ahmed <br> &nbsp;( Assistant professor )</li>
+            <li>Dr.P.Rizwan Ahmed <br> &nbsp;( Assistant prof & HOD of BCA )</li>
             <b>Team Leader :</b> <br> S.Mohammed Muzammil <br>
             <b>Team Members :</b> <br> T.Mohammed Rayan <br> M.Mohammed Thouheed <br>
             </p>
         </div>
+    </div>
+    <section class="Team">
+        <div class="our_team">
+            <div class="photo">
+                <img src="/images/Team/Muzammil.jpg" alt="Muzammil" width="160" height="160">
+            </div>
+            <div class="details">
+                <p id="name">S.MOHAMMED MUZAMMIL</p> <br>
+                <p>Team Leader</p>
+            </div>
+        </div>
+        <div class="our_team">
+            <div class="photo">
+                <img src="/images/Team/Rayan.jpg" alt="Rayan" width="160" height="160">
+            </div>
+            <div class="details">
+                <p id="name">T.MOHAMMED RAYAN</p> <br>
+                <p>Team Member</p>
+            </div>
+        </div>
+        <div class="our_team">
+            <div class="photo">
+                <img src="/images/Team/thouheed.jpg" alt="Thouheed" width="170" height="160">
+            </div>
+            <div class="details">
+                <p id="name">T.MOHAMMED THOUHEED</p> <br>
+                <p>Team Member</p>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <p>&copy; 2025 Skill Builder</p>
     </div>
 </body>
 </html>
