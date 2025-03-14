@@ -88,10 +88,10 @@ form.addEventListener("submit", function(event) {
 
 
 //js for contact from submission
-document.getElementById('contact-form').addEventListener('submit',function(event){
-  event.preventDefault(); //prevents the default form from submitting
-  alert('Submitted Successfully')
-});
+// document.getElementById('contact-form').addEventListener('submit',function(event){
+//   event.preventDefault(); //prevents the default form from submitting
+//   alert('Submitted Successfully')
+// });
 
 
 
