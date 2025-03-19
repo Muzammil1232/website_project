@@ -43,61 +43,6 @@ document.getElementById('searchInput').addEventListener('keydown', function(even
 });
 
 
-
-
-
-// Get the modal and buttons
-var modal = document.getElementById("loginModal");
-var loginBtn = document.getElementById("loginBtn");
-var closeBtn = document.getElementById("closeBtn");
-var form = document.getElementById("loginForm");
-
-// Show the modal when the "Login" button is clicked
-loginBtn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// Close the modal when the "X" button is clicked
-closeBtn.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Close the modal if the user clicks outside of the modal content
-window.onclick = function(event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-}
-
-// Form submission (for now, just a simple alert)
-form.addEventListener("submit", function(event) {
-    event.preventDefault();  // Prevent the form from submitting
-    
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    
-    // Example validation (you can replace this with real logic)
-    if (username === "muc" && password === "12345") {
-        alert("Login successful!");
-        modal.style.display = "none"; // Close the modal on successful login
-    } else {
-        document.getElementById('error-message').textContent = "Invalid username or password!";
-        document.getElementById('error-message').style.display = "block";
-    }
-});
-
-
-//js for contact from submission
-// document.getElementById('contact-form').addEventListener('submit',function(event){
-//   event.preventDefault(); //prevents the default form from submitting
-//   alert('Submitted Successfully')
-// });
-
-
-
-
-
-
 //automatic image slider
 let slideIndex = 0;
 showSlides();
@@ -117,3 +62,54 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+
+
+
+const loginModal = document.getElementById("loginModal");
+        const openLoginBtn = document.getElementById("openLoginBtn");
+        const closeBtn = document.getElementById("closeBtn");
+        const loginForm = document.getElementById("loginForm");
+        const userIcon = document.getElementById("userIcon");
+        const userInfo = document.getElementById("userInfo");
+        const userNameSpan = document.getElementById("userName");
+
+        // Open Modal
+        openLoginBtn.addEventListener("click", () => {
+            loginModal.style.display = "block";
+        });
+
+        // Close Modal
+        closeBtn.addEventListener("click", () => {
+            loginModal.style.display = "none";
+        });
+
+        // Handle Login
+        loginForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username && password) {
+                loginModal.style.display = "none"; // Hide modal
+                openLoginBtn.style.display = "none"; // Hide login button
+                userIcon.style.display = "flex"; // Show user icon
+                userIcon.textContent = username.charAt(0).toUpperCase(); // Set first letter as icon
+                userNameSpan.textContent = username; // Set username in info panel
+            } else {
+                document.getElementById("error-message").textContent = "Invalid username or password!";
+            }
+        });
+
+        // Toggle User Info Dropdown
+        userIcon.addEventListener("click", () => {
+            userInfo.style.display = userInfo.style.display === "block" ? "none" : "block";
+        });
+
+        // Close User Info Dropdown if clicked outside
+        window.addEventListener("click", (event) => {
+            if (event.target !== userIcon && event.target !== userInfo) {
+                userInfo.style.display = "none";
+            }
+        });

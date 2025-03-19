@@ -158,11 +158,14 @@
     }
 
     .menu-icon {
-        display: block;
-        margin-left: 10px;
+        display: inline-block;
+        /* margin-left: 10px; */
     }
     #loginBtn{
         margin-left: 0;
+    }
+    .modal-content{
+        width: 80%;
     }
     .contact-section{
         flex-direction: row;

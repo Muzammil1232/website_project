@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .login-btn {
+            background-color: white;
+            color: #520c61;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .login-btn:hover{
+            box-shadow: 0 0 15px 2px white;
+        }
+        #button-color{
+            background-color: #520c61;
+            color: white;
+            font-weight: bold;
+
+        }
+        #button-color:hover{
+            box-shadow:0 0 10px 5px #520c61;
+            cursor: pointer;
+        }
+
+       /* #loginBtn{
+            background-color: white;
+            color: #520c61;
+            margin-left: 40rem;
+        }
+        #loginBtn:hover{
+            box-shadow: 0 0 15px 2px white;
+        } */
+        .user-icon {
+            display: none; /* Hidden before login */
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            color: #520c61;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+        }
+        .user-info {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            white-space: nowrap;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .close-btn {
+            float: right;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Button -->
+    <button id="openLoginBtn" class="login-btn">Login</button>
+
+    <!-- User Icon (Hidden before login) -->
+    <div id="userIcon" class="user-icon" style="display: none;">U</div>
+
+    <!-- User Info Dropdown -->
+    <div id="userInfo" class="user-info">
+        <p>Welcome, <span id="userName"></span>!</p>
+    </div>
+
+    <!-- The Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label> <br>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label> <br>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="login-btn" id="button-color">Login</button>
+            </form>
+            <p class="error-message" id="error-message" style="color: red;"></p>
+        </div>
+    </div>
+
+    <script>
+        const loginModal = document.getElementById("loginModal");
+        const openLoginBtn = document.getElementById("openLoginBtn");
+        const closeBtn = document.getElementById("closeBtn");
+        const loginForm = document.getElementById("loginForm");
+        const userIcon = document.getElementById("userIcon");
+        const userInfo = document.getElementById("userInfo");
+        const userNameSpan = document.getElementById("userName");
+
+        // Open Modal
+        openLoginBtn.addEventListener("click", () => {
+            loginModal.style.display = "block";
+        });
+
+        // Close Modal
+        closeBtn.addEventListener("click", () => {
+            loginModal.style.display = "none";
+        });
+
+        // Handle Login
+        loginForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username && password) {
+                loginModal.style.display = "none"; // Hide modal
+                openLoginBtn.style.display = "none"; // Hide login button
+                userIcon.style.display = "flex"; // Show user icon
+                userIcon.textContent = username.charAt(0).toUpperCase(); // Set first letter as icon
+                userNameSpan.textContent = username; // Set username in info panel
+            } else {
+                document.getElementById("error-message").textContent = "Invalid username or password!";
+            }
+        });
+
+        // Toggle User Info Dropdown
+        userIcon.addEventListener("click", () => {
+            userInfo.style.display = userInfo.style.display === "block" ? "none" : "block";
+        });
+
+        // Close User Info Dropdown if clicked outside
+        window.addEventListener("click", (event) => {
+            if (event.target !== userIcon && event.target !== userInfo) {
+                userInfo.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>
